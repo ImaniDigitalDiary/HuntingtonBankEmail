@@ -56,9 +56,6 @@
     color: #06402B;
     font-weight: 700;
 }
-.main-div {
-    width: 340px;
-}
 .div-1-heading {
     color: #66BD29;
     font-size: 30px;  
@@ -72,10 +69,14 @@ p {
     color: #fff;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    /* font-family: "Roboto Serif", serif;     */
+    font-family: "Roboto Serif", serif;    
+    margin: 0 !important;
 }
 span {
     font-size: 32px;
+}
+h5.bank-name {
+    font-weight: 800;
 }
 
 /* DIV 2 STYLES */
