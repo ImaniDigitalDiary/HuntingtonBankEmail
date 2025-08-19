@@ -3,8 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-.body {
-    /* height: 100vh; */
+body {
+    height: 100vh;  
+    background-image: url('./images/wallpaper.png');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .email-wrapper {
     display: flex;
@@ -14,8 +18,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
-    width: 660px;
+    width: 680px;
     height: 400px;
+
+    
 }
 .div-1 {
     display: flex;
@@ -25,16 +31,21 @@
     /* align-items: center; */
     text-align: center;
     background-color: #06402B;
-    width: 340px;
-    border-radius: 15px;
+    width: 380px;
+    /* border-radius: 15px; */
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
 }
 .div-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #fff;
-    width: 320px;
+    width: 280px;
     padding-left: 40px;
+    box-shadow: 7px 0px rgba(176, 250, 123, 0.5);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 
@@ -43,13 +54,16 @@
     width: 120px;
 }
 .div-1-header-div {
-    /* display: flex; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #66BD29;
     /* height: 30px !important; */
     text-transform: uppercase;
-    width: 340px;
+    width: 380px;
+    height: 50px;
     font-weight: 600;
-    border-top-right-radius: 15px;
+    /* border-top-right-radius: 15px; */
     border-top-left-radius: 15px;
 }
 .div-1-header {
@@ -76,8 +90,13 @@ span {
     font-size: 32px;
 }
 h5.bank-name {
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 24px;
+    color: #66BD29;
+    font-family: "Varela Round", sans-serif;
+    /* text-transform: uppercase; */
 }
+
 
 /* DIV 2 STYLES */
 .div-2-heading {
@@ -106,10 +125,4 @@ h5.bank-name {
     border: none;
     border-radius: 4px;
     letter-spacing: .25px;
-}
-h5.bank-name {
-    color: #66BD29;
-    /* text-transform: uppercase; */
-    font-family: "Varela Round", sans-serif;
-    font-weight: 700;
 }
