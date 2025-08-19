@@ -35,6 +35,7 @@ body {
     /* border-radius: 15px; */
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
+    box-shadow: -7px 4px 7px  rgba(176, 250, 123, 0.5);
 }
 .div-2 {
     display: flex;
@@ -43,7 +44,7 @@ body {
     background-color: #fff;
     width: 280px;
     padding-left: 40px;
-    box-shadow: 7px 0px rgba(176, 250, 123, 0.5);
+    box-shadow: 7px 4px 7px rgba(176, 250, 123, 0.5);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
 }
