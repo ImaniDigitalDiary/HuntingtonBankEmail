@@ -87,6 +87,7 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-family: "Roboto Serif", serif;    
     margin-top: 25px;
+    line-height: 30px;
 }
 span {
     font-size: 32px;
@@ -96,6 +97,8 @@ h5.bank-name {
     font-size: 24px;
     color: #66BD29;
     font-family: "Varela Round", sans-serif;
+    position: relative;
+    bottom: 3%;
     /* text-transform: uppercase; */
 }
 
