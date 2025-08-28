@@ -3,15 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-/* @media screen and (min-width: 1440px ) { */
-    body {
-            height: 100vh;
-            background-image: url('./images/wallpaper.png');
-            width: 100%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0 auto;
-        }
+
+ body {
+
+     background-image: url('./images/wallpaper.png');
+     width: 100vw;
+     height: 100vh;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin: 0 auto;
+     overflow: hidden;
+ }
+
+@media screen and (max-width: 1440px ) {
     
         .email-wrapper {
             display: flex;
@@ -142,26 +146,6 @@
             border-radius: 4px;
             letter-spacing: .25px;
         }
-/* } */
+}
 
 
-
-
-
-
-
-
-
-/* @media screen and (max-width: 425px) { 
-    .email-wrapper {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: transparent;
-            width: 680px;
-            height: 400px;
-    }
-} */

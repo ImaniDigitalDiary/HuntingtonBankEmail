@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url('./images/wallpaper.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.email-wrapper {
+    display: flex;
+    flex-direction: row;
+    /* keep side-by-side as default */
+    max-width: 900px;
+    width: 100%;
+    background: transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Section */
+.div-1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #06402B;
+    flex: 1 1 55%;
+    /* flex-grow */
+    /* padding: 20px; */
+    box-sizing: border-box;
+}
+
+.div-1-header-div {
+    background-color: #66BD29;
+    padding: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #06402B;
+    border-top-left-radius: 15px;
+}
+
+.logo {
+    width: 120px;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.div-1-heading {
+    color: #66BD29;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Roboto Serif", serif;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.div-1 p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.div-1 p span {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.bank-name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #66BD29;
+    font-family: "Varela Round", sans-serif;
+    margin-top: auto;
+}
+
+/* Right Section */
+.div-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    flex: 1 1 45%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.div-2-heading {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    color: #202124;
+}
+
+.div-2-text {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #5f6368;
+    word-wrap: break-word;
+}
+
+.div-2-btn {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background-color: #1A73E8;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+/* -------- Responsive Breakpoints -------- */
+
+/* Tablets & smaller: stack */
+@media screen and (max-width: 599px) {
+    .email-wrapper {
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .div-1,
+    .div-2 {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .div-1-header-div {
+        /* border-top-right-radius: 15px; */
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .div-1-heading {
+        font-size: 1.5rem;
+    }
+
+    .div-2-heading {
+        font-size: 1.4rem;
+    }
+
+    .div-2-text {
+        font-size: 1rem;
+    }
+
+    .div-2-btn {
+        width: 100%;
+    }
+}
